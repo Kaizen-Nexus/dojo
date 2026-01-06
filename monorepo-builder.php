@@ -31,11 +31,11 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     ]);
 
     // Install also the monorepo-builder! So it can be used in CI
-    $parameters->set(Option::DATA_TO_APPEND, [
-        'require-dev' => [
-            'symplify/monorepo-builder' => '^9.0',
-        ]
-    ]);
+    // $parameters->set(Option::DATA_TO_APPEND, [
+    //     'require-dev' => [
+    //         'symplify/monorepo-builder' => '^9.0',
+    //     ]
+    // ]);
 
     $services = $containerConfigurator->services();
     $services->defaults()
