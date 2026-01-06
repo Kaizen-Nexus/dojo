@@ -10,13 +10,17 @@ use Symplify\MonorepoBuilder\Release\ReleaseWorker\TagVersionReleaseWorker;
 use Symplify\MonorepoBuilder\Release\ReleaseWorker\UpdateBranchAliasReleaseWorker;
 use Symplify\MonorepoBuilder\Release\ReleaseWorker\UpdateReplaceReleaseWorker;
 use Symplify\MonorepoBuilder\ValueObject\Option;
+use Symplify\MonorepoBuilder\Config\MBConfig;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     
     $parameters = $containerConfigurator->parameters();
+    $parameters->set(Option::DEFAULT_BRANCH_NAME, 'main');
+
     $parameters->set('package_directories', [
         __DIR__ . '/packages/survey',
     ]);
+
 
     $parameters->set(Option::DATA_TO_REMOVE, [
         'require-dev' => [
