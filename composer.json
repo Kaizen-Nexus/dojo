@@ -2,8 +2,7 @@
     "name": "katanadha/katana-core",
     "description": "Katana Monorepo (development root)",
     "require": {
-        "php": "^7.2 || ^8.0|| ^8.2",
-        "symfony/dependency-injection": "^5.0"
+        "php": "^7.2 || ^8.0|| ^8.2"
     },
     "require-dev": {
         "monorepo-php/monorepo": "^12.4",
@@ -15,6 +14,6 @@
         }
     },
     "replace": {
-        "katanadha/survey": "1.0.4"
+        "katanadha/survey": "1.0.5"
     }
 }
