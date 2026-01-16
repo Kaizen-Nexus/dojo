@@ -1,0 +1,16 @@
+{
+  "name": "kaizen-nexus/core",
+  "description": "Kaizen Nexus Core Installer for EC-CUBE2",
+  "type": "library",
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "KaizenNexus\\Core\\": "src"
+    }
+  },
+  "bin": [
+    "bin/kaizen"
+  ]
+}
